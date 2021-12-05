@@ -24,6 +24,7 @@ class AoCCommand : CliktCommand(help = "Advent of Code CLI") {
             day == 1 -> Day1(test_fname = "$inputDirectory/01/$test_fname", puzzle_fname = "$inputDirectory/01/$puzzle_fname").runAll()
             day == 2 -> Day2(test_fname = "$inputDirectory/02/$test_fname", puzzle_fname = "$inputDirectory/02/$puzzle_fname").runAll()
             day == 3 -> Day3(test_fname = "$inputDirectory/03/$test_fname", puzzle_fname = "$inputDirectory/03/$puzzle_fname").runAll()
+            day == 4 -> Day3(test_fname = "$inputDirectory/04/$test_fname", puzzle_fname = "$inputDirectory/04/$puzzle_fname").runAll()
             day == 5 -> Day5(test_fname = "$inputDirectory/05/$test_fname", puzzle_fname = "$inputDirectory/05/$puzzle_fname").runAll()
             else -> println("No entry for day $day")
         }
