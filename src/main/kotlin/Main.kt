@@ -1,3 +1,6 @@
+/**
+ * AoC 2021 Application
+ */
 import advent.Day1
 import advent.Day2
 import advent.Day3
@@ -6,6 +9,9 @@ import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.parameters.options.*
 import com.github.ajalt.clikt.parameters.types.int
 
+/**
+ * CLI Argument Parser
+ */
 class AoCCommand : CliktCommand(help = "Advent of Code CLI") {
     val day by option(help="Day to Run").int().default(1)
     val inputDirectory by option(help="Inputs Directory").default("inputs")

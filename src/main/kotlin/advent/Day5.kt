@@ -3,6 +3,10 @@ package advent
 import java.io.File
 import kotlin.math.roundToInt
 
+/**
+ * Day 5 puzzle
+ * TODO: document the puzzle summary
+ */
 class Day5 (test_fname: String, puzzle_fname: String) : Runner(test_fname, puzzle_fname) {
 
     /**
