@@ -5,6 +5,7 @@ import advent.Day1
 import advent.Day2
 import advent.Day3
 import advent.Day5
+import advent.Day6
 import advent.Day7
 import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.parameters.options.*
@@ -27,6 +28,7 @@ class AoCCommand : CliktCommand(help = "Advent of Code CLI") {
             day == 3 -> Day3(test_fname = "$inputDirectory/03/$test_fname", puzzle_fname = "$inputDirectory/03/$puzzle_fname").runAll()
             day == 4 -> Day3(test_fname = "$inputDirectory/04/$test_fname", puzzle_fname = "$inputDirectory/04/$puzzle_fname").runAll()
             day == 5 -> Day5(test_fname = "$inputDirectory/05/$test_fname", puzzle_fname = "$inputDirectory/05/$puzzle_fname").runAll()
+            day == 6 -> Day6(test_fname = "$inputDirectory/06/$test_fname", puzzle_fname = "$inputDirectory/06/$puzzle_fname").runAll()
             day == 7 -> Day7(test_fname = "$inputDirectory/07/$test_fname", puzzle_fname = "$inputDirectory/07/$puzzle_fname").runAll()
             else -> println("No entry for day $day")
         }
